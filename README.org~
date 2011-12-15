@@ -1,0 +1,12 @@
+* ChucK Instrument Processing v0.9
+
+Online at http://cip.ablelemon.co.uk
+
+** About
+
+ChucK Instrument Processing (CIP) facilities audio processing within ChucK.
+
+** Quick Demo
+
+Add Start_CIP.ck.
+Then add CIPdemo.ck.

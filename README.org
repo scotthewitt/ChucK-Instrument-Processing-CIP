@@ -1,0 +1,18 @@
+* ChucK Instrument Processing v0.9
+
+Online at http://cip.ablelemon.co.uk
+
+** About
+
+ChucK Instrument Processing (CIP) facilities audio processing within ChucK.
+
+** Quick Demo
+
+Add Start_CIP.ck.
+Then add CIPdemo.ck.
+
+** Requires
+
+CIP requires a current install of the MiniAudicle v0.2.0.
+
+CIP has been tested on OS X 10.4, 10.5 and 10.6.

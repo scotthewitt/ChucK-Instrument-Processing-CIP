@@ -1,4 +1,4 @@
-* ChucK Instrument Processing v0.9
+* ChucK Instrument Processing v1
 
 Online at http://cip.ablelemon.co.uk
 

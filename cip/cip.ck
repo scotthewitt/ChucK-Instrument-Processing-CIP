@@ -4,9 +4,9 @@ public class bus
 }
 new Gain[4] @=> bus.chan;
 
-//CIP v0.9
+//CIP v1
 
-<<< "CIP v0.9 : Chuck Instrument Processing">>>;
+<<< "CIP v1 : Chuck Instrument Processing">>>;
 <<< "@scotthewitt cip.ablelemon.co.uk">>>;
 
 //basic audio routing

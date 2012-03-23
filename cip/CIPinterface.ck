@@ -1,19 +1,31 @@
-public class Interface extends CIPpatch
+class Interface extends OSCBase
 {  
-    0 => int numberofsliders;
-    
-    // slider label, min slider value, max slider value 
-    function MAUI_Slider effectinterface(string label, float min, float max)
-    {       
-        MAUI_Slider slider;
-        cip_eff_gui.addElement (slider);
-        label => slider.name;
-        slider.precision(6);
-        slider.range(min, max);
-        slider.position(0, (numberofsliders * 100 + 100));
-        min => slider.value;
-        cip_eff_gui.display();
-        numberofsliders++;
-        return slider;
-    }
+	//setup gauge
+	function void lev_mon (int a){
+        	 bus.chan[a].last() => float f ;
+		 sendOSC("127.0.0.1", 10000, "/hello/letsgo", f);
+		 }
+		  
+	//await slider movment
+	//function void slid_event (int b){
+	//    while (true){
+	//        slider[b] => now;
+	//        slider[b].value() => bus.chan[b].gain;
+	//    }
+	//}
 }
+
+Interface i;
+
+//test stuff
+SinOsc s => bus.chan[2];
+0.1 => s.freq;
+0.9 => bus.chan[2].gain;
+
+while(1)
+{
+	i.lev_mon(2);
+	200::ms => now;
+}
+
+//end of test

@@ -1,8 +1,10 @@
+4 => int maxchannels;
+
 public class bus
 {
-    static Gain @ chan[4];
+    static Gain @ chan[maxchannels];
 }
-new Gain[4] @=> bus.chan;
+new Gain[maxchannels] @=> bus.chan;
 
 //CIP v2
 

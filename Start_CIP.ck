@@ -1,4 +1,4 @@
-//Designed for use with miniAudicle on OS X with CIPv1 dmg image.
+//Designed for use with ChucK on Linux with CIPv2 dmg image.
 
 //CIP
 Machine.add( "/Volumes/CIPv1/cip/cip.ck" );

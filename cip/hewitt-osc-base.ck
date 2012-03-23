@@ -124,6 +124,31 @@ SetNameSpace(ns);
 MakeAndSendOSC(Std.rand2f(0.,1.));
 }
 
+// create the OSC receiver
+OscRecv recv;
+10001 => recv.port;
+recv.listen();
+
+function void listengain(string listenNS)
+{
+recv.event( "listenNS, f" ) @=> OscEvent oe;
+
+// infinite event loop
+while ( true )
+{
+    // wait for event to arrive
+    oe => now;
+
+    // grab the next message from the queue. 
+    while ( oe.nextMsg() != 0 )
+    { 
+        // getFloat fetches the expected float (as indicated by "f")
+        <<< oe.getFloat() >>>;
+    }
+}
+}
+
+
 }
 
 //OSCBase hob;

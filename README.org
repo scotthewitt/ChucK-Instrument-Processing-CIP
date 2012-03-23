@@ -13,6 +13,6 @@ Then add CIPdemo.ck.
 
 ** Requires
 
-CIP requires a current install of the MiniAudicle v0.2.0.
+This is a dev version of CIP which will only require ChucK.
 
-CIP has been tested on OS X 10.4, 10.5 and 10.6.
+It currently only sort of works so.
